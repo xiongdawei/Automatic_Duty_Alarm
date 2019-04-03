@@ -1,8 +1,8 @@
 import itchat
-
 import time
 
-itchat.auto_login(hotReload=True, enableCmdQR=True)
+
+itchat.auto_login(hotReload=True)
 #itchat.send("If you receive this message, it means David X's program is working", toUserName = daizhibo0804)
 #itchat.send("If you receive this message, it means that David X's program is working", toUserName = "joandavidkevin")
 #itchat.send("Hello, filehelper", toUserName="filehelper")
@@ -25,7 +25,7 @@ def send_message(namee, message_content):
 #send_message(name1,apologize)
 #send_message(name2,apologize)
 
-Duty_Table_Single = [['James','Flora','Eric'],['Shane','Frank','Barry'],['Rachel','Catherine','Lena'],['Leon','Cassandra'],['Brett','Elina']]
+Duty_Table_Single = [['James','Flora','liucong'],['Shane','Frank','Barry'],['Rachel','Catherine','Lena'],['Leon','Cassandra'],['Brett','Elina']]
 Duty_Table_Double = [['Micheal','Nancy','Tony'],['Chelsea','Hermione'],['Horace','Summer','Erica'],['Ella','David_D'],['Grace','Joerica','George']]
 
 today = int(time.strftime('%w'))
@@ -37,3 +37,5 @@ def send_message_eachone(today,Table):
     for i in range(0,numm):
         send_message(today_list[i],alarm)
 send_message_eachone(today,Duty_Table_Single)
+
+
